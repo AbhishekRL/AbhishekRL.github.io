@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek RL - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
+            color: white;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #4f46e5, #9333ea);
+            text-align: center;
+            animation: fade 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+            padding: 70px 15%;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            border-left: 5px solid #9333ea;
+            padding-left: 15px;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #9333ea;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            color: #a78bfa;
+        }
+
+        .card a {
+            color: #8b5cf6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .social {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .social a {
+            margin: 0 12px;
+            font-size: 28px;
+            color: #a78bfa;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            margin-top: 30px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hi, I'm Abhishek 👋</h1>
+    <p>MCA Student • Web Developer • ML Enthusiast</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I'm Abhishek, an MCA student passionate about Web Development and Machine Learning.
+        I love building real-world projects that solve meaningful problems. Currently learning
+        React, and ML algorithms. My goal is to become a Full-Stack / ML Engineer.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <div class="card">
+            <h3>Languages</h3>
+            <p>Python, Java, C++, SQL</p>
+        </div>
+        <div class="card">
+            <h3>Web Technologies</h3>
+            <p>HTML5, CSS3, JavaScript, React.js</p>
+        </div>
+        <div class="card">
+            <h3>Frameworks</h3>
+            <p> Bootstrap</p>
+        </div>
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Git, GitHub</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Medicine Recommendation System</h3>
+            <p>An ML system that predicts diseases & recommends medicines, workouts, and diets.</p>
+            <a target="_blank" href="#">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>E-Commerce Website (React.js)</h3>
+            <p>A full shopping website with cart, filters & product pages.</p>
+            <a target="_blank" href="#">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Eventora Web App</h3>
+            <p>A clean UI event creation and user management web application.</p>
+            <a target="_blank" href="https://github.com/AbhishekRL/eventora-webapp">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Medicine Recommendation System</h3>
+          <p>An ML system that predicts diseases & recommends medicines, workouts, and diets.</p>
+          <a target="_blank" href="https://github.com/AbhishekRL/Medicine-Recommendation-System">View Project</a>
+        </div>
+
+
+        <div class="card">
+            <h3>Kannada Speech Sound Disorder</h3>
+            <p>Analysis of Kannada speech patterns to detect sound disorders.</p>
+            <a target="_blank" href="https://github.com/AbhishekRL/Kannada-speech-sound-disorder">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="social">
+    <a href="mailto:rlabhishek06@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/AbhishekRL" target="_blank"><i class="fa-brands fa-github"></i></a>
+</section>
+
+<footer>
+    © 2025 Abhishek RL | Portfolio Website
+</footer>
+
+</body>
+</html>
